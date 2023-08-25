@@ -1,4 +1,6 @@
+//2212020
 //to find the sum of two very large numbers using string
+//time complexity O(n) and space complexity O(length of string)
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -37,9 +39,14 @@ char* findSum(const char* str1, const char* str2) {
 }
 
 int main() {
-    const char* str1 = "25968686";
-    const char* str2 = "1000005686000145";
-    
+    char* str1;
+    char* str2;
+    char x[1000],y[1000];
+    printf("enter first number: ");
+    scanf("%s",x);
+    printf("enter second number: ");
+    scanf("%s",y);
+    str1=x,str2=y;
     char* result = findSum(str1, str2);
     
     printf("Sum: %s\n", result);
